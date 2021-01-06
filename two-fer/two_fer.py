@@ -12,14 +12,14 @@
 
 
 def two_fer():
-    name = input("Please input name: ")
+    # name = input("Please input name: ")
 
-    if name == True:
-        print ("One for " + name + ", one for you.")
-    elif name == "":
+    if two_fer() == True:
+        print ("One for " + two_fer() + ", one for you.")
+    elif two_fer() == "":
         print ("One for you, one for me.")
     else:
-        raise Exception("Meaningful message indicating the source of the error")
+        raise Exception("Supposed to print out hello greetings.")
 
 
 two_fer()
