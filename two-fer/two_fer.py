@@ -13,16 +13,18 @@
 
 def two_fer():
     name = input("Please input name: ")
-
-    if name == True:
-        print ("One for " + name + ", one for you.")
-    elif name == "":
+    print("One for " + name + ", one for me.")
+    
+def no():
+    if two_fer() == True:
+        print (two_fer())
+    elif no() == None:
         print ("One for you, one for me.")
     else:
-        raise Exception("Supposed to print out hello greetings.")
+        print("Nothing.")
 
 
-two_fer()
+no()
 '''
 #This one's wrong too.
 
