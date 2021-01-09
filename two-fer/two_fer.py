@@ -1,9 +1,9 @@
-def two_fer():
-    name = input("What is your name?")
+def two_fer(name):
+   # name = "Alice"
 
     if name != "":
-        print("One for " + name + ", one for me.")
+        return("One for " + name + ", one for me.")
     else:
-        print("One for you, one for me.")
+        return("One for you, one for me.")
 
-two_fer()
+print(two_fer("Alice"))
