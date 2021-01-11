@@ -1,13 +1,13 @@
 
-def two_fer(name = "Alice"):
+def two_fer(name = "you"):
 
     if name != "":
         return(f"One for {name}, one for me.")
     else:
-        return("One for you, one for me.")
+        return(f"One for {name}, one for me.")
 
-print(two_fer())
+print(two_fer("Alice"))
 print(two_fer("Bob"))
-print(two_fer(""))
+print(two_fer())
 
 
