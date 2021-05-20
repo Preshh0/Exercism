@@ -1,2 +1,15 @@
+
+Sounds = {3: "Pling", 5: "Plang", 7: "Plong"}
+Factors = (3, 5, 7)
+
+def is_divisible_by(number, divisor):
+    return number % divisor == 0
+
+
+def raindrops(number):
+    return [Sounds[factor] for factor in Factors if is_divisible_by(number, factor)]
+
+
 def convert(number):
-    pass
+    speak = raindrops(number)
+    return "".join(speak) if speak else str(number)
