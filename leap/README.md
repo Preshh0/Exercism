@@ -69,3 +69,15 @@ JavaRanch Cattle Drive, exercise 3 [http://www.javaranch.com/leap.jsp](http://ww
 ## Submitting Incomplete Solutions
 
 It's possible to submit an incomplete solution so you can see how others have completed the exercise.
+
+
+
+'''
+def leap_year(year):
+    return (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0)
+'''
+#ANother solution
+'''
+def leap_year(year: int) -> bool:
+    return year % 4 == 0 and year % 100 != 0 or year % 400 == 0
+'''
