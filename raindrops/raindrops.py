@@ -1,6 +1,5 @@
 
 Sounds = {3: "Pling", 5: "Plang", 7: "Plong"}
-Factors = (3, 5, 7)
 
 def is_divisible_by(number, divisor):
     return number % divisor == 0
