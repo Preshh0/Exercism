@@ -7,7 +7,7 @@ def is_divisible_by(number, divisor):
 
 
 def raindrops(number):
-    return [Sounds[factor] for factor in Factors if is_divisible_by(number, factor)]
+    return [Sounds[factor] for factor in Sounds if is_divisible_by(number, factor)]
 
 
 def convert(number):
